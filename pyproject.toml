@@ -1,0 +1,23 @@
+[project]
+name = "my-dbt-snowflake"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "jhagg85", email = "jhaggy85@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-core>=1.12.3",
+    "dbt-snowflake>=1.12.0",
+]
+
+[project.scripts]
+dbt-snowflake = "dbt_snowflake:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
