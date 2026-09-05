@@ -8,3 +8,12 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local VS Code workspace tracking paths
+.vscode/
+
+# Local dbt runtime execution and debugging logs
+logs/
+dbt_modules/
+target/
+.python-version
