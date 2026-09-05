@@ -1,0 +1,22 @@
+{
+  /* ==========================================
+     1. WORKSPACE SPECIFIC VENV BOUNDARIES
+     ========================================== */
+  "python.defaultInterpreterPath": "/Users/josephalbertgarganera/Desktop/DBT_Snowflake/.venv/bin/python",
+  "dbt.dbtPythonPathOverride": "${workspaceFolder}/../.venv/bin/python",
+  "dbt.dbtExecutablePath": "${workspaceFolder}/../.venv/bin/dbt",
+  "dbt.dbtIntegration": "core",
+  "dbt.enableAutocomplete": true,
+
+  /* ==========================================
+     2. OVERRIDING DATA INTERFACE ALIGNMENTS
+     ========================================== */
+  "[jinja-sql]": {
+    "editor.defaultFormatter": "innoverio.vscode-dbt-power-user",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2, // dbt models use 2 spaces, while your global Python uses 4
+    "editor.insertSpaces": true
+  },
+  "sqlfluff.executablePath": "${workspaceFolder}/../.venv/bin/sqlfluff",
+  "dbt.perspectiveTheme": "Pro Dark"
+}
